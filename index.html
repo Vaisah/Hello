@@ -1,0 +1,472 @@
+  <!DOCTYPE html>
+  <html lang="en" dir="ltr">
+    <head>
+      <meta charset="utf-8">
+      <title>Home</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+      <script src="https://kit.fontawesome.com/018d9ba538.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+      <header id="header"><!--header-start-->
+        <div class="container">
+          <div class="header_left">
+            <a class="logo" href="#"><img src="" alt="logo"></a>
+          </div>
+          <div class="header_right">
+            <label for="menuTrigger" class="nav_ico"><i class="fa fa-bars"></i></label>
+            <input id="menuTrigger" type="checkbox" name="">
+            <nav class="main_nav">
+              <ul>
+                <li><a href="#" onclick="setActive(this); showSection('home');">Home</a></li>
+                <li><a href="#" onclick="setActive(this); showSection('about');">About</a></li>
+                <li><a href="#" onclick="setActive(this); showSection('services');">Service</a>
+                  <i class="fa fa-caret-down"></i>
+                  <ul>
+                    <li><a href="#" onclick="setActive(this); showSection('forensics');">Forensics</a></li>
+                    <li><a href="#" onclick="setActive(this); showSection('cybersecurity');">Cybersecurity</a></li>
+                    <li><a href="#" onclick="setActive(this); showSection('web');">Web Development</a></li>
+                    <li><a href="#" onclick="setActive(this); showSection('mobile');">Mobile Apps Development</a>
+                      <!--i class="fa fa-caret-down"></i>
+                      <ul>
+                        <li><a href="#">Service 11</a></li>
+                        <li><a href="#">Service 11</a></li>
+                        <li><a href="#">Service 11</a>
+                          <i class="fa fa-caret-down"></i>
+                          <ul>
+                            <li><a href="#">Service 111</a></li>
+                            <li><a href="#">Service 111</a></li>
+                            <li><a href="#">Service 111</a></li>
+                          </ul>
+                        </li>
+                      </ul-->
+                    </li>
+                  </ul>
+                </li>
+                <li><a href="#" onclick="setActive(this); showSection('projects');">Projects</a></li>
+                <li><a href="#" onclick="setActive(this); showSection('contact');">Contact Us</a></li>
+              </ul>
+            </nav>    
+          </div>
+          
+        </div>
+      </header><!--header-end-->
+      
+      <section id="home" class="active">
+        <div class="animated-background">
+          <div class="content">
+            <h1>CyberTech</h1>
+            <p><i>"Your Companion in Cybersecurity Solutions"</i></p>
+          </div>
+          <div id="word-container"></div>
+        </div>
+        <!--section class="details-section">
+          <button id="learnMoreBtn">Learn More</button>
+          <div id="moreDetails" class="details-content">
+            <h2 class="details-header">Additional Details</h2>
+            <div class="details">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum metus vel augue rhoncus, eu feugiat velit tristique.</p>
+              <ul>
+                <li>Detail 1</li>
+                <li>Detail 2</li>
+                <li>Detail 3</li>
+              </ul>
+              <img src="https://via.placeholder.com/300" alt="Additional Image">
+            </div>
+          </div>
+        </section-->
+      </section>
+
+      <section id="about">
+        <!-- Add content for the 'About' section here -->
+        <section class="image-section">
+          <h2>Forensics</h2>
+          <div class="description">
+            <h3>Data Extaction and Recovery</h2>
+            <p> Data extraction and other stuff of the description - is specific to a computing 
+              device that was used for committing the crime. This computer device once seized, will 
+              be thoroughly investigated for evidence in question, once found locked by the owner, 
+              CyberTech has sufficient skills to bypass the locked screen and crack the password 
+              or change it entirely even in its locked state in order to access the evidence at hand.
+              Certain criminals might be clever enough as to delete incriminating evidence to avoid 
+              going to jail, fortunately for our clients CyberTech is equipped with skills to recover
+                deleted information even after it has long been deleted.</p>
+          </div>
+          <div class="image-container">
+            <img src="Assets/Images/bg.jpg" alt="Image 1">
+          </div>
+          
+        </section>
+      
+        <section class="image-section">
+          <div class="description">
+            <h3>Device Imaging and Analysis</h2>
+            <p>The part for this section and other parts and stuff
+              - is specific to a computing device that was used for committing the crime. 
+              This computer device once seized, will be thoroughly investigated for 
+              evidence in question, once found locked by the owner, 
+              CyberTech has sufficient skills to bypass the locked screen and crack 
+              the password or change it entirely even in its locked state in order to access
+              the evidence at hand. Certain criminals might be
+              clever enough as to delete incriminating evidence to avoid going to jail, 
+              fortunately for our clients CyberTech is equipped with skills to recover
+              deleted information even after it has long been deleted.
+            </p>
+          </div>
+          <div class="image-container">
+            <img src="./Assets/Images/forensics.png" alt="Image 2">
+          </div>
+          
+        </section>
+      
+        <section class="image-section">
+          <div class="description">
+            <h3>Forensics Report Generation</h2>
+            <p>This is same stuff - is specific to a computing device that was used for committing the crime. 
+              This computer device once seized, will be thoroughly investigated for
+              evidence in question, once found locked by the owner,
+              CyberTech has sufficient skills to bypass the locked screen and crack 
+              the password or change it entirely even in its locked state in order to access 
+              the evidence at hand. Certain 
+              criminals might be clever enough as to delete incriminating evidence 
+              to avoid going to jail, fortunately for our clients CyberTech is
+              equipped with skills to recover deleted information even after it has long been deleted.</p>
+          </div>
+          <div class="image-container">
+            <img src="./Assets/Images/ecom.png" alt="Image 3">
+          </div>
+        
+        </section>
+      </section>
+
+      <section id="services">
+        <div class="service-container">
+          <!--
+          <button class="prev" onclick="showPreviousService()">&#10094;</button>
+          -->
+          <div class="service active">
+              <img src="./Assets/Images/forensics1.webp" alt="Forensics Service">
+              <div class="service-info">
+                  <h2>Forensics</h2>
+                  <p>Forensic deals with Computer 
+                      and Mobile device investigations.
+                      The main tasks involved in this category 
+                      include data recovery for deleted evidence 
+                      and password cracking to access locked devices. </p>
+                  <a href="#forensics" class="learn-more-btn">Learn More</a>
+              </div>
+          </div>
+
+          <div class="service">
+              <img src="./Assets/Images/cybersecurity.jpg" alt="Cybersecurity Service">
+              <div class="service-info">
+                  <h2>Cybersecurity</h2>
+                  <p>cybersecurity aims at providing digital security solutions to protect
+                      your electronic assets. Detection, and Protection of digital assets in 
+                      "real-time" are at the centre in this category. </p>
+                  <a href="#cybersecurity-details" class="learn-more-btn">Learn More</a>
+              </div>
+          </div>
+
+          <div class="service">
+              <img src="./Assets/Images/mobile_apps1.png" alt="Mobile Applications Service">
+              <div class="service-info">
+                  <h2>Mobile Applications</h2>
+                  <p>Our mobile app development team creates innovative and user-friendly
+                      applications for various platforms, among the popular ones being Android
+                        and IOS platforms.</p>
+                  <a href="#mobile-apps-details" class="learn-more-btn">Learn More</a>
+              </div>
+          </div>
+
+          <div class="service">
+              <img src="./Assets/Images/web_design.png" alt="Web Design and Implementation Service">
+              <div class="service-info">
+                  <h2>Web Design</h2>
+                  <p>We specialize in designing and implementing modern, responsive websites
+                      and web applications that users can interact with, tailored to your technological needs.</p>
+                  <a href="#web-design-details" class="learn-more-btn">Learn More</a>
+              </div>
+          </div>
+          <!--
+          <button class="next" onclick="showNextService()">&#10095;</button>
+          -->
+       </div>
+      </section>
+
+      <!--Forensics page-->
+      <section id="forensics">
+        <section class="subsection" id="section1">
+          <div class="content">
+            <h2>Mobile forensics</h2>
+            <p>looks at mobile phone-based evidence that may have been used
+              to commit a cybercrime. The challenge in this uncharted field lies in the 
+              rapid technological changes that occur daily, monthly, quarterly or annually through updates.
+              Our specialists fortunately for the clients are ever running on their toes to keep tabs
+              with these ever-changing mobile updates that makes it difficult for investigators to gather evidence after
+              a cybercrime has occurred.</p>
+          </div>
+          
+          <div class="media">
+            <img src="./Assets/Images/forensics.png" alt="Image 1">
+          </div>
+        </section>
+        <div class="separator"></div>
+        <section class="subsection">
+          <div class="media">
+            <video width="600" height="400" controls>
+              <source src="./Assets/videos/" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="content">
+            <h2>Computer Forensics</h2>
+            <p>- is specific to a computing device that was used for committing the crime. This computer
+              device once seized, will be thoroughly investigated for evidence in question, once found locked by the owner, CyberTech has sufficient
+              skills to bypass the locked screen and crack the password or change it entirely even in its locked state in order to access the evidence at hand. Certain
+              criminals might be clever enough as to delete incriminating evidence to avoid going to jail, fortunately for our clients CyberTech is 
+              equipped with skills to recover deleted information even after it has long been deleted.</p>
+          </div>
+        </section>
+        <div class="separator"></div>
+        <section class="subsection" id="section1">
+          <div class="content">
+            <h2>Title 3</h2>
+            <p>Description for Title 3. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          </div>
+          <div class="media">
+            <img src="./Assets/Images/forensics1.webp" alt="Image 2">
+          </div>
+        </section>
+
+      </section>
+
+      <section id="projects">
+        <!-- Add content for the 'Projects' section here -->
+
+      
+      <div class="separator"></div>
+      <div class="details-header">
+          <h2 class="more">More Details</h2>
+      </div>
+
+      <div class="separator"></div>
+
+      <div class="details-section">
+          
+          <div class="details" id="forensics-details">
+              <img src="./Assets/Images/forensics.png" alt="Forensics Details Image">
+              <h2>Forensics</h2>
+              <p>Mobile forensics is a specialized field within digital forensics
+                  dedicated to the investigation and analysis of digital evidence
+                    on mobile devices. With the ubiquity of smartphones and tablets, 
+                    mobile forensics plays a crucial role in uncovering valuable information for legal,
+                    investigative, and cybersecurity purposes. This discipline involves the systematic
+                      extraction, preservation, and examination of data from mobile devices to reconstruct 
+                      events, uncover patterns, and retrieve crucial evidence.</p>
+
+                      <h3>Services</h3>
+                      <ul>
+                          <li>Data Extraction and Recovery</li>
+                          <li>Device Imaging and Analysis</li>
+                          <li>Forensics Report Generation</li>
+                          <li>Consultation</li>
+                      </ul>
+                      
+          </div>
+
+
+          <div class="separator"></div>
+
+          <div class="details" id="cybersecurity-details">
+              <img src="./Assets/Images/cybersecurity.jpg" alt="Cybersecurity Details Image">
+              <h2>Cybersecurity</h2>
+              <p>Cybersecurity is a critical field dedicated to safeguarding digital systems, 
+                  networks, and data from malicious threats, ensuring the confidentiality, integrity,
+                  and availability of information. In an era dominated by interconnected technologies,
+                    the importance of cybersecurity cannot be overstated. This discipline encompasses 
+                    a wide range of practices, strategies, and technologies aimed at protecting individuals,
+                    organizations, and governments from cyber threats</p>
+
+                    <h3>Services</h3>
+              <ul>
+                  <li>Network Security</li>
+                  <li>Vulnerability Management</li>
+                  <li>Penetration Testing</li>
+                  <li>Information security</li>
+                  <li>Information Systems Audit and Implementation</li>
+                  <li>Identity and Access Management</li>
+                  <li>Firewall Protection</li>
+              </ul>
+              <section class="subsection">
+                <div class="content">
+                  <h2>Title 1</h2>
+                  <p>Description for Title 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="media">
+                  <img src="./Assets/Images/cybersecurity.jpg" alt="Image 1">
+                </div>
+              </section>
+            
+              <section class="subsection">
+                <div class="media">
+                  <iframe width="300" height="200" src="https://www.youtube.com/embed/example-video-1" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="content">
+                  <h2>Title 2</h2>
+                  <p>Description for Title 2. </p>
+                </div>
+              </section>
+            
+              <section class="subsection">
+                <div class="content">
+                  <h2>Title 3</h2>
+                  <p>Description for Title 3. </p>
+                </div>
+                <div class="media">
+                  <img src="./Assets/Images/mobile_apps.png" alt="Image 2">
+                </div>
+              </section>
+        
+          </div>
+
+          <div class="separator"></div>
+
+          <div class="details" id="mobile-apps-details">
+              <img src="./Assets/Images/mobile_apps.png" alt="Mobile Applications Details Image">
+              <h2>Mobile Applications</h2>
+              <p>Mobile app development is a dynamic and rapidly evolving field that involves 
+                  the creation of applications tailored for use on mobile devices, such as 
+                  smartphones and tablets. With the proliferation of mobile technology, app development 
+                  has become a cornerstone of the digital landscape, offering innovative solutions
+                  and enhancing user experiences across various industries. </p>
+
+                  <h3>Services</h3>
+                  <ul>
+                      <li>User Interface (UI) Design</li>
+                      <li>Android Apps Developement</li>
+                      <li>Appliction Testing</li>
+                  </ul>
+          </div>
+
+          <div class="separator"></div>
+
+          <div class="details" id="web-design-details">
+              <img src="./Assets/Images/web_design.png" alt="Web Design Details Image">
+              <h2>Web Design and Implementation</h2>
+              <p>Web development is a dynamic and multidisciplinary field focused 
+                  on creating and maintaining websites for the internet. 
+                  It involves a combination of skills, technologies,
+                  and methodologies to design, develop, and deploy web applications
+                    and content that users can access through web browsers. 
+                    Web development encompasses a wide range of tasks,
+                    from building simple static web pages to developing complex, 
+                    interactive web applications.</p>
+
+                    <h3>Services</h3>
+                    <ul>
+                      <li>Frontend Development</li>
+                      <li>Backend Development</li>
+                      <li>Full-Stack Development</li>
+                      <li>Web Design</li>
+                      <li>Web Security</li>
+                      <li>Web deployment and Hosting</li>
+                    </ul>
+
+                    <section class="content-section">
+                      <img src="https://via.placeholder.com/800x400" alt="Image 1">
+                      <div class="description">
+                        <h2>Title 1</h2>
+                        <p>Description for Title 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <a href="#" class="button-link">Learn More</a>
+                      </div>
+                    </section>
+                  
+                    <section class="content-section">
+                      <img src="https://via.placeholder.com/800x400" alt="Image 2">
+                      <div class="description">
+                        <h2>Title 2</h2>
+                        <p>Description for Title 2. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <a href="#" class="button-link">Learn More</a>
+                      </div>
+                    </section>
+                  
+                    <section class="content-section">
+                      <img src="https://via.placeholder.com/800x400" alt="Image 3">
+                      <div class="description">
+                        <h2>Title 3</h2>
+                        <p>Description for Title 3. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                        <a href="#" class="button-link">Learn More</a>
+                      </div>
+                    </section>
+          </div>
+          <div class="separator"></div>
+
+      </div>
+      <i class="fa-solid fa-angle-up" onclick="scrollToTop()" class="back-to-top"></i>
+      <!--
+      <button class="back-to-top" onclick="scrollToTop()">Back to Top</button>
+      -->
+      <br><br><br>
+      
+      <div class="footer">
+          &copy; 2024 CyberTech. All rights reserved.
+      </div>
+      </section>
+
+      <section id="contact">
+        <!-- Add content for the 'Contact' section here -->
+        <div class="wrapper">
+          <header>Send us a Message</header>
+          <form action="#">
+            <div class="dbl-field">
+              <div class="field">
+                <input type="text" name="name" placeholder="Enter your name">
+                <i class='fas fa-user'></i>
+              </div>
+              <div class="field">
+                <input type="text" name="email" placeholder="Enter your email">
+                <i class='fas fa-envelope'></i>
+              </div>
+            </div>
+            <div class="dbl-field">
+              <div class="field">
+                <input type="text" name="phone" placeholder="Enter your phone">
+                <i class='fas fa-phone-alt'></i>
+              </div>
+              <!--div class="field">
+                <input type="text" name="website" placeholder="Enter your website">
+                <i class='fas fa-globe'></i>
+              </div-->
+            </div>
+            <div class="message">
+              <textarea placeholder="Write your message" name="message"></textarea>
+              <i class="material-icons"></i>
+            </div>
+            <div class="button-area">
+              <button type="submit">Send Message</button>
+              <span></span>
+            </div>
+          </form>
+        </div>
+      </section>
+      
+        <!--Cybersecurity-->
+        <section id="cybersecurity">
+
+        </section>
+        <!--Web development-->
+        <section id="web">
+
+        </section>
+
+        <!--Mobile applictions-->
+        <section id="mobile">
+
+        </section>
+      <script src="./Assets/script.js"></script>
+    </body>
+  </html>

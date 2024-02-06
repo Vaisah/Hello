@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://kit.fontawesome.com/018d9ba538.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <header id="header"><!--header-start-->
+        <div class="container">
+          <div class="header_left">
+            <a class="logo" href="#"><img src="images/logo.png" alt="logo"></a>
+          </div>
+          <div class="header_right">
+            <label for="menuTrigger" class="nav_ico"><i class="fa fa-bars"></i></label>
+            <input id="menuTrigger" type="checkbox" name="">
+            <nav class="main_nav">
+              <ul>
+                <li><a href="#" onclick="setActive(this); showSection('home');">Home</a></li>
+                <li><a href="#" onclick="setActive(this); showSection('about');">About</a></li>
+                <li><a href="#" onclick="setActive(this); showSection('services');">Service</a>
+                  <i class="fa fa-caret-down"></i>
+                  <ul>
+                    <li><a href="#">Forensics</a></li>
+                    <li><a href="#">Cybersecurity</a></li>
+                    <li><a href="#">Web Development</a></li>
+                    <li><a href="#">Mobile Apps Development</a>
+                      <!--i class="fa fa-caret-down"></i>
+                      <ul>
+                        <li><a href="#">Service 11</a></li>
+                        <li><a href="#">Service 11</a></li>
+                        <li><a href="#">Service 11</a>
+                          <i class="fa fa-caret-down"></i>
+                          <ul>
+                            <li><a href="#">Service 111</a></li>
+                            <li><a href="#">Service 111</a></li>
+                            <li><a href="#">Service 111</a></li>
+                          </ul>
+                        </li>
+                      </ul-->
+                    </li>
+                  </ul>
+                </li>
+                <li><a href="#" onclick="setActive(this); showSection('projects');">Projects</a></li>
+                <li><a href="#" onclick="setActive(this); showSection('contact');">Contact Us</a></li>
+              </ul>
+            </nav>    
+          </div>
+          
+        </div>
+      </header><!--header-end-->
+   <section id="home" class="active">
+    <!--home page-->
+    <h2>Home</h2>
+   </section>
+
+   <section id="about">
+    <!--about page-->
+    <h2>About</h2>
+   </section>
+
+
+      <section id="services">
+        <div class="container">
+          <!-- Add content for the 'Service' section here -->
+          <div id="service-section">
+            <h2>Service</h2>
+            <p id="paragraph">CyberTech security Solutions is
+                 an all-rounded business entity that helps our 
+                 clients in tailoring software tools that will help
+                  smooth the work and solve their ever-dynamic 
+                computing need in an ever-changing technological world.</p>
+                <div class="cards">
+                    <div class="card">
+                        <i class="fa-brands fa-react"></i>
+                        <div class="content">
+                            <h3>Web Development</h3>
+                            <p>The web is very crucial to t
+                                today’s world because information dispensation 
+                                is no longer physical but digital and the internet allows 
+                                for a world-wide coverage. Most services are now online, schools, patient’s
+                                 records and government services are now accessible through websites,
+                                  it is for this 
+                                 cause that we at CyberTech security solutions we
+                                 offer web design and implementation. </p>
+                                 <a href="#" class="learn-more-link"> learn more</a>
+                        </div>
+                    </div>
+  
+                    <div class="card">
+                        <i class="fa-solid fa-mobile-screen"></i>
+                        <div class="content">
+                            <h3>Mobile App Development</h3>
+                            <p>CyberTech security Solutions is an all-rounded business
+                                 entity that helps our clients in tailoring software tools that will help smooth
+                                 the work and solve their ever-dynamic computing 
+                                 need in an ever-changing technological world. </p>
+                                 <a href="#" class="learn-more-link"> learn more</a>
+                        </div>
+                    </div>
+  
+                    <div class="card">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <div class="content">
+                            <h3>Forensincs</h3>
+                            <p>The Forensic aspect deals with the investigations relating to 
+                                the computer and mobile crimes that may have been committed by the perpetrator.
+                                 In this area our firm has the specialization to investigate computer and mobile crimes
+                                on devices that have been lawfully been seized by the investigative wings
+                                  of government to bring perpetrators to book. </p>
+                                  <a href="#" class="learn-more-link"> learn more</a>
+                        </div>
+                    </div>
+  
+                    <div class="card">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <div class="content">
+                            <h3>Cybersecurity</h3>
+                            <p>The web is very crucial to t
+                                oday’s world because information dispensation 
+                                is no longer physical but digital and the internet allows 
+                                for a world-wide coverage. Most services are now online, schools, patient’s
+                                 records and government services are now accessible through websites,
+                                  it is for this 
+                                 cause that we at CyberTech security solutions we
+                                 offer web design and implementation. </p>
+                                 <a href="#" class="learn-more-link"> learn more</a>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <!--project page-->
+        <h2>projects</h2>
+       </section>
+
+       
+
+       <section id="contact">
+        <!--contact page-->
+        <h2>contact</h2>
+       </section>
+  
+      
+</body>
+</html>
