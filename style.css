@@ -13,6 +13,10 @@ img{
   width: 5%;
   height: auto;
 }
+.logo{
+  width: 210px;
+  height: 16px;
+}
 
 
 
@@ -36,6 +40,12 @@ img{
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.container .header_left{
+  width: 70px;
+  height: auto;
+  float: left;
+  padding: 0px;
 }
 .nav_ico{
   display: block;
@@ -214,7 +224,7 @@ img{
 .animated-background {
     width: 100%;
     height: 800px;
-    background: url(./Assets/Images/bg.jpg) repeat;
+    background: url(./Assets/Images/bac.jpg) repeat;
     animation: animateBackground 20s linear infinite;
   }
 
@@ -231,7 +241,7 @@ img{
     padding-top: 40px;
     margin: 0px 0px 0px 0px;
     text-align: center;
-    color:black;
+    color:#fff;
 }
 .content h1 {
     padding-top: 80px;
@@ -246,9 +256,14 @@ font-size: 30px;
 display: block;
 text-align: center;
 margin-top: 100px;;
-color:black;
+color:#fff;
 /*position: absolute;*/
 }
+/*
+social media icons
+*/
+
+
   /*try out the sections*/
   section {
     display: none;
@@ -525,11 +540,11 @@ img {
 /*---------------\
 Contact page
 ----------------*/
-#contact{
+.contact{
   display: flex;
-  padding: 0 10px;
+  padding: 50px 10px;
   min-height: 100vh;
-  background: #0D6EFD;
+  background: #063883;
   align-items: center;
   justify-content: center;
 }
@@ -538,7 +553,7 @@ Contact page
   background: #0D6EFD;
 }
 .wrapper{
-  top: 20px;
+  top: 150px;
   width: 715px;
   background: #fff;
   border-radius: 5px;
@@ -634,7 +649,7 @@ form .button-area{
   border-radius: 5px;
   padding: 13px 25px;
   background: #0D6EFD;
-  transition: background 0.3s ease;
+  transition: 0.3s ease;
 }
 .button-area button:hover{
   background: #025ce3;
@@ -677,3 +692,111 @@ form .button-area{
     text-align: center;
   }
 }
+
+
+/*
+about section wrapper
+/
+
+.wrapper1 {
+  max-width: 1100px;
+  width: 100%;
+  position: relative;
+}
+.wrapper1 i {
+  top: 50%;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  font-size: 1.25rem;
+  position: absolute;
+  text-align: center;
+  line-height: 50px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+}
+.wrapper1 i:active{
+  transform: translateY(-50%) scale(0.85);
+}
+.wrapper1 i:first-child{
+  left: -22px;
+}
+.wrapper1 i:last-child{
+  right: -22px;
+}
+.wrapper1 .carousel{
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 3) - 12px);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 16px;
+  border-radius: 8px;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+.carousel.no-transition {
+  scroll-behavior: auto;
+}
+.carousel.dragging {
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+}
+.carousel.dragging .card {
+  cursor: grab;
+  user-select: none;
+}
+.carousel :where(.card, .img) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel .card {
+  scroll-snap-align: start;
+  height: 342px;
+  list-style: none;
+  background: #fff;
+  cursor: pointer;
+  padding-bottom: 15px;
+  flex-direction: column;
+  border-radius: 8px;
+}
+.carousel .card .img {
+  background: #8B53FF;
+  height: 148px;
+  width: 148px;
+  border-radius: 50%;
+}
+.card .img img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #fff;
+}
+.carousel .card h2 {
+  font-weight: 500;
+  font-size: 1.56rem;
+  margin: 30px 0 5px;
+}
+.carousel .card span {
+  color: #6A6D78;
+  font-size: 1.31rem;
+}
+@media screen and (max-width: 900px) {
+  .wrapper .carousel {
+    grid-auto-columns: calc((100% / 2) - 9px);
+  }
+}
+@media screen and (max-width: 600px) {
+  .wrapper .carousel {
+    grid-auto-columns: 100%;
+  }
+}
+*/
